@@ -6,13 +6,9 @@ Vagrant workflow. This version currently only supports Chef cookbooks.
 
 ## Installation
 
-If you use the gem version of Vagrant, use:
+Add the gem to your Gemfile:
 
-    $ gem install vagrant-librarian
-
-otherwise, use:
-
-    $ vagrant gem install vagrant-librarian
+    gem "vagrant-librarian"
 
 ## Usage
 
