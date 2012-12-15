@@ -12,6 +12,8 @@ Add the gem to your Gemfile:
 
 ## Usage
 
+This gem automatically hooks into `vagrant up`. All you need is a suitably
+formatted Cheffile and to provision your Vagrant VM with Chef solo.
 
 ## Contributing
 
