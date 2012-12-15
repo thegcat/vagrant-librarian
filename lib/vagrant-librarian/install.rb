@@ -9,6 +9,8 @@ module Vagrant
       end
 
       def call(env)
+        env[:ui].info "Installing CookBooks, this can take a few minutes..."
+
         @app.call(env)
       end
     end
