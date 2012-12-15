@@ -1,3 +1,6 @@
+require "librarian/chef"
+require "librarian/action"
+
 module Vagrant
   module Librarian
 
@@ -10,6 +13,11 @@ module Vagrant
 
       def call(env)
         env[:ui].info "Installing CookBooks, this can take a few minutes..."
+
+        lce = ::Librarian::Chef::Environment.new
+        ::Librarian::Action::Ensure.new(lce).run
+        ::Librarian::Action::Resolve.new(lce).run
+        ::Librarian::Action::Install.new(lce).run
 
         @app.call(env)
       end
