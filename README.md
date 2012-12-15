@@ -2,7 +2,7 @@
 
 This gem is a [Vagrant](http://vagrantup.com) plugin that takes care of
 installing and updating librarian-managed cookbooks as part of your normal
-Vagrant workflow.
+Vagrant workflow. This version currently only supports Chef cookbooks.
 
 ## Installation
 
