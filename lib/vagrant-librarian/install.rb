@@ -9,10 +9,11 @@ module Vagrant
     class Install
       def initialize(app, env)
         @app = app
+        @env = env
       end
 
       def call(env)
-        env[:ui].info "Installing CookBooks, this can take a few minutes..."
+        @env[:ui].info "Installing CookBooks, this can take a few minutes..."
 
         lce = ::Librarian::Chef::Environment.new
         ::Librarian::Action::Ensure.new(lce).run
