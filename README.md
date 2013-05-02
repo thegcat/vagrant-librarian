@@ -1,21 +1,11 @@
-# Vagrant::Librarian
+# Vagrant::Librarian (deprecated)
+
+This gem only works with old Vagrant and Librarian versions and is 
+*deprecated* in favor of 
+[vagrant-librarian-chef](https://github.com/jimmycuadra/vagrant-librarian-chef).
+
+## Description
 
 This gem is a [Vagrant](http://vagrantup.com) plugin that takes care of
 installing and updating librarian-managed cookbooks as part of your normal
 Vagrant workflow. This version currently only supports Chef cookbooks.
-
-## Installation
-
-Add the gem to your Gemfile:
-
-    gem "vagrant-librarian"
-
-## Usage
-
-This gem automatically hooks into `vagrant up`. All you need is a suitably
-formatted Cheffile and to provision your Vagrant VM with Chef solo.
-
-## Contributing
-
-Please submit issues and pull requests to the [GitHub page of the
-project](https://github.com/thegcat/vagrant-librarian)
